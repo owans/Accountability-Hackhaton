@@ -1,22 +1,95 @@
-.App {
-  text-align: center;
+/* Tonye tried this
+
+
+.SignIn{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 12px;
+}
+*/
+
+.social-icons{
+    background-color: eee;
+}
+.signup-container{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
+.social-btn{
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: #ccc;
+    width: 60%;
+    
+}
+.social-btn{
+    background-color: rgb(241, 241, 241);
+    color: black;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 1.9px;
+    padding: 1.9px;
+    box-sizing: border-box;
+    display: flex;
+    translate: .3s;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.social-txt{
+    text-align: center;
+    justify-items: center;
+    padding-top: 20px;
+}
+.social-btn:hover{
+    cursor: pointer;
+}
+/*
+.social-btn{
+    width: 100%,
+    border: 2px; solid #fafafa,
+    border-
+    margin: 8px,
+    outline: none,
+    padding: 8px,
+    box-sizing: border-box,
+    translate: .3s,
+}
+*/
+
+.form{
+    min-width: 60%;
 }
 
-.App-link {
-  color: #09d3ac;
+.with-email{
+    width: 100%;
+    background: #0B273D !important;
+}
+
+.dash-header{
+    height: 50%;
+    background: #ffffff !important;
+    color: #000000;
+    display: flex;
+}
+
+.dash-header .firstDetails{
+    display: flex;
+    margin: 100px !important;
+}
+
+.dash-header .secondDetails{
+    display: flex;
+    float: right;
+    background: #ffffff;
+    margin-right: -200px !important;
 }

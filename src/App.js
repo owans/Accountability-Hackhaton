@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import Home from '../src/components/Home/home';
+import SignIn from '../src/components/SignIn/signin';
+import SigninWithEmail from './components/SignIn/SignUpWithEmail'
+import SigninWithMailConfirm from './components/SignIn/ConfirmEmail'
+import SavedProject from './components/project/SavedProject'
+import NoMatch from '../src/components/NotFound/404';
+import { Route, Switch} from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/signin' component={SignIn} />
+        <Route exact path='/signin-mail' component={SigninWithEmail} />
+        <Route exact path='/signin-mail-confirm' component={SigninWithMailConfirm } />
+        <Route exact path="/saved-project" component={SavedProject} />
+        <Route component={NoMatch}></Route>
+      </Switch>
+    </React.Fragment>
   );
 }
 
