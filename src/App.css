@@ -1,22 +1,195 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.fuild {
+	padding-left: 0;
+	padding-right: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+.intro {
+	display: flex;
+	min-width: 100vw;
+	align-content: center;
+	justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	background: #f7f7f7;
+}
+.homeCards {
+	min-width: 100vw;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: -5rem;
+}
+.navbar {
+	background: #0b273d !important;
+	color: #fff !important;
+	font-family: 'Roboto', sans-serif;
 }
 
-.App-link {
-  color: #09d3ac;
+.jombo {
+	padding-left: 0;
+	padding-right: 0;
+	background: black;
+	height: 25rem;
+	position: relative;
+	background: url('./assets/heroImage.png') no-repeat center center/cover;
+	z-index: -2;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #2c5e2e;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+.inner {
+	color: #fff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.searchBtn {
+	background: #0b273d;
+	border-radius: 10px;
+}
+
+.innerText {
+	width: 60%;
+	font-size: 20px;
+	color: #7f7f7f;
+}
+.innerText-green {
+	width: 80%;
+	background: #2c5e2e;
+	border-radius: 20px;
+	height: 300px;
+	color: #fff;
+}
+.prelast {
+	background: #fff;
+	width: 100%;
+	display: flex;
+	padding: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.pre-right {
+	background: #54d0ed;
+	padding: 20px;
+	border-radius: 10px;
+	min-height: 14rem;
+}
+
+.pre-left {
+	background: #f7f7f7;
+	margin-left: 10px;
+	padding: 20px;
+	border-radius: 10px;
+	min-height: 14rem;
+}
+
+.social-icons {
+	background-color: eee;
+}
+.signup-container {
+	display: flex;
+	align-items: center;
+	height: 80vh;
+	width: 100vw;
+	flex-direction: column;
+}
+
+.social-btn {
+	border-width: 8px;
+	border-radius: 10px;
+	border-color: #ccc;
+	width: 60%;
+}
+.social-btn {
+	background-color: rgb(241, 241, 241);
+	color: black;
+	border: 2px;
+	border-style: solid;
+	border-color: black;
+	margin: 1.9px;
+	padding: 1.9px;
+	box-sizing: border-box;
+	display: flex;
+	translate: .3s;
+}
+
+.social-txt {
+	text-align: center;
+	justify-items: center;
+	padding-top: 20px;
+}
+.social-btn:hover {
+	cursor: pointer;
+}
+
+.form {
+	min-width: 60%;
+}
+
+.with-email {
+	width: 100%;
+	background: #0b273d !important;
+}
+
+/* dashboard */
+.dash-header {
+	display: flex;
+	background: #fff;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	min-height: 6rem;
+}
+
+.dash-item {
+	width: 30%;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-container {
+	width: 100vw;
+	padding-left: 7rem;
+	padding-right: 7rem;
+}
+
+.card-p {
+	display: flex;
+	padding: 1.5rem;
+	background: #fff;
+	justify-content: space-between;
+	align-items: center;
+	height: 16rem;
+	min-width: 6rem;
+}
+
+.right-card {
+	margin-left: 20px;
 }
