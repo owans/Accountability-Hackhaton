@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Footer from '../common/footer/Footer';
 import Navbar from '../common/Navbar';
+import queryString from 'query-string';
 import { Image } from 'react-bootstrap';
 import projectImage from '../../assets/card3.png';
-const SavedProject = () => {
+
+const SavedProject = ({ location, history }) => {
+	useEffect(
+		() => {
+			const query = queryString.parse(location.search);
+			if (query.token) {
+				window.localStorage.setItem('jwtToken', query.token);
+			} else {
+				history.push('/signin');
+			}
+		},
+		// eslint-disable-next-line
+		[],
+	);
 	return (
 		<div>
 			<Navbar />
@@ -29,13 +44,25 @@ const SavedProject = () => {
 						<Image src={projectImage} rounded />
 					</div>
 					<div className="right-card">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati distinctio magni mollitia velit officia
-						illum, dolorem necessitatibus, voluptatum possimus nostrum reiciendis, aliquam inventore veniam saepe aut
-						molestias laborum culpa deserunt. Incidunt aperiam quaerat delectus nihil voluptate impedit possimus quas
-						voluptatum?
+						<div>
+							<h4>Etche Bridge Contruction</h4>
+							<h6>Name of Contractor</h6>
+							<p>Activity Status</p>
+						</div>
+						<div>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati distinctio magni mollitia velit officia
+							illum, dolorem necessitatibus, voluptatum possimus nostrum reiciendis, aliquam inventore veniam saepe aut
+							molestias laborum culpa deserunt. Incidunt aperiam quaerat delectus nihil voluptate impedit possimus quas
+							voluptatum?
+						</div>
+						<div className="extra">
+							<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eum.</div>
+							<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eius.</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

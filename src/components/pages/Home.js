@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../common/footer/Footer';
 import { Container, Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 import CustomCard from '../common/Card';
 import roadImage from '../../assets/card3.png';
@@ -15,16 +16,10 @@ const Home = () => {
 				<div className="overlay" />
 				<div className="inner">
 					<h3>We are creating a new level of transparency by increasing civic participation in NDDC Projects</h3>
-					<InputGroup className="mb-3 mt-3">
-						<FormControl
-							placeholder="Search Project e.g sector state, community"
-							aria-label="Recipient's username"
-							aria-describedby="basic-addon2"
-						/>
-						<InputGroup.Append>
-							<Button className="searchBtn">Search</Button>
-						</InputGroup.Append>
-					</InputGroup>
+					<div className="s-div go-sixty mt-3">
+						<input placeholder="suscribe to news letter" />
+						<Button>Subscribe</Button>
+					</div>
 				</div>
 			</Col>
 			<Row>
@@ -69,6 +64,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</Container>
 	);
 };

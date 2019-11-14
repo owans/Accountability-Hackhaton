@@ -15,7 +15,7 @@ function App() {
 			<Route exact path="/signin" component={SignIn} />
 			<Route exact path="/signup-mail" component={SignUpMail} />
 			<Route exact path="/signup-mail-confirm" component={ConfirmMail} />
-			<Route exact path="/savedProject" component={SavedProject} />
+			<Route exact path="/dashboard" component={SavedProject} />
 		</Router>
 	);
 }

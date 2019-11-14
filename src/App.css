@@ -190,6 +190,53 @@ body {
 	min-width: 6rem;
 }
 
+
+.extra {
+	display: flex;
+	padding: 1.5rem;
+	background: #fff;
+	justify-content: space-between;
+	align-items: center;
+	height: 16rem;
+	min-width: 6rem;
+}
+
 .right-card {
 	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.f-container {
+	background: #707070;
+	height: 10rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: #ffffff;
+	line-height: 8px;
+}
+
+.s-div {
+	border: 5px solid #ffffff;
+	border-radius: 9px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 2 6px;
+}
+
+.go-sixty {
+	width: 60%;
+}
+
+.s-div input {
+	border: none;
+	outline: none;
+	padding: 4px;
+}
+
+.s-div button {
+	border-radius: 10px;
+	background: #0b273d;
 }
