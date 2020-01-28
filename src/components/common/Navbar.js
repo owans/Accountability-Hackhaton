@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const NavbarCustom = () => {
 	return (
-		<Navbar className="navbar" expand="lg">
+		<Navbar className="navbar fixed-top" expand="lg">
 			<Navbar.Brand style={{ color: '#fff' }} className="ml-5">
 				<Link style={{ color: '#fff' }} to="/">
-					Tracker
+					<span style={{color: "#54D0ED"}}>NDDC |</span> Tracker
 				</Link>
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />

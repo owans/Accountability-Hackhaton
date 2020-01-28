@@ -4,6 +4,10 @@ import { Container, Row, Col, InputGroup, FormControl, Button } from 'react-boot
 import CustomCard from '../common/Card';
 import roadImage from '../../assets/card3.png';
 import NavBar from '../common/Navbar';
+import LocationImage from '../../assets/card1.png';
+import SectorImage from '../../assets/card3.png';
+import organisationImage from '../../assets/card2.png';
+
 const Home = () => {
 	return (
 		<Container className="fuild" fluid={true}>
@@ -17,24 +21,22 @@ const Home = () => {
 				<div className="inner">
 					<h3>We are creating a new level of transparency by increasing civic participation in NDDC Projects</h3>
 					<div className="s-div go-sixty mt-3">
-						<input placeholder="suscribe to news letter" />
-						<Button>Subscribe</Button>
+						<input placeholder="Search Project" />
+						<Button>Search</Button>
 					</div>
 				</div>
 			</Col>
 			<Row>
 				<Col className="homeCards mb-5">
-					<CustomCard />
-					<CustomCard />
-					<CustomCard />
+				   <CustomCard  image={SectorImage} name="sector"/>
+					<CustomCard image={LocationImage} name="location"/>
+					<CustomCard image={organisationImage} name="organisation" />
 				</Col>
 			</Row>
 			<div className="intro">
 				<div className="innerText">
 					<p style={{ textAlign: 'center' }}>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam perspiciatis harum qui neque, quod magni
-						dignissimos pariatur cupiditate tempora distinctio numquam voluptas, debitis porro recusandae facere. Eaque
-						provident maiores id!
+					NDDC KICK STARTS 2ND BATCH OF 29 MEGA PROJECTS
 					</p>
 				</div>
 			</div>
@@ -45,8 +47,7 @@ const Home = () => {
 					</Col>
 					<Col>
 						<p style={{ padding: '10px', fontSize: '25px', lineHeight: '3rem' }}>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta beatae provident eveniet, ipsam odio
-							magnam eaque repellat cupiditate aliquid accusamus optio ex dolore facere eos nam sit adipisci eius saepe.
+						The Niger Delta Development Commission has commenced the process for the implementation of the 2nd batch of 29 mega projects sited across the region.
 						</p>
 					</Col>
 				</Row>
@@ -54,13 +55,10 @@ const Home = () => {
 			<div className="prelast">
 				<div className="container">
 					<div className="pre-left">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ab beatae nulla iure at qui itaque modi,
-						aperiam id reprehenderit. Unde vitae minima vel, ipsa sint sit eius nam corporis.
+					2 of the projects are sited in Abia state, 8 in Akwa Ibom, 2 in Bayelsa, one in Cross River and 7 in Delta state. Edo state has one, Imo 4 and Rivers 4.
 					</div>
 					<div className="pre-right">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam voluptatem explicabo qui dolore, magni
-						incidunt aliquid autem velit alias officiis temporibus ipsum quia commodi, architecto atque veniam iste?
-						Magnam, ipsum.
+					The 29 projects are outside the 53 already lined up for execution by NDDC in August.
 					</div>
 				</div>
 			</div>

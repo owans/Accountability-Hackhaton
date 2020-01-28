@@ -34,7 +34,7 @@ const SignUpWithEmail = ({ history }) => {
 	return (
 		<div>
 			<Navbar />
-			<div className="mt-5">
+			<div className="mt-5 mb-5">
 				<div className="signup-container">
 					<h3 className="mt-5 mb-5 text-center">Sign In to read and Write Feedback</h3>
 					<div className="social-btn mb-3">

@@ -114,7 +114,7 @@ body {
 .signup-container {
 	display: flex;
 	align-items: center;
-	height: 80vh;
+	min-height: 80vh;
 	width: 100vw;
 	flex-direction: column;
 }
@@ -185,20 +185,13 @@ body {
 	padding: 1.5rem;
 	background: #fff;
 	justify-content: space-between;
-	align-items: center;
-	height: 16rem;
-	min-width: 6rem;
 }
-
 
 .extra {
 	display: flex;
-	padding: 1.5rem;
 	background: #fff;
 	justify-content: space-between;
 	align-items: center;
-	height: 16rem;
-	min-width: 6rem;
 }
 
 .right-card {
@@ -239,4 +232,28 @@ body {
 .s-div button {
 	border-radius: 10px;
 	background: #0b273d;
+}
+
+/* Search page styles */
+
+.s-container{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid: 1px;
+}
+
+#title{
+	text-align: center;
+}
+
+.filter{
+	background: #ccc;
+	width: 100%;
+}
+
+.select-container{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+
 }
